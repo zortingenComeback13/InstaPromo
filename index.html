@@ -403,8 +403,7 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      cursor: not-allowed;
-      opacity: 0.8;
+      cursor: pointer;
     }
 
     .platform {
@@ -465,11 +464,10 @@
     </div>
   </div>
 
-
   <div class="header-right">
-    <div class="badge">Project preview</div>
+    <div class="badge">VERSION 1</div>
     <button class="header-btn" onclick="document.getElementById('download').scrollIntoView({behavior:'smooth'})">
-      ⬇️ Get Insta
+       Use Insta
     </button>
   </div>
 </header>
@@ -490,22 +488,22 @@
       <p class="hero-desc">
         Insta is a small experimental project that recreates the YouTube feeling –
         channels, videos, music and Shorts – but everything is stored locally using
-        <strong>localStorage</strong>. Perfect for demos, classrooms and offline experiments.
+        <strong>data folder you made</strong>. Perfect for daily life, classrooms and offline experiments.
       </p>
 
       <div class="hero-pills">
-        <div class="pill">Offline only</div>
         <div class="pill">Multiple accounts & channels</div>
-        <div class="pill">Shorts (≤ 60 seconds)</div>
-        <div class="pill">InstaMusic audio player</div>
+        <div class="pill">Shorts</div>
+        <div class="pill">InstaMusic</div>
       </div>
 
       <div class="hero-cta-row">
         <button class="btn-primary" onclick="document.getElementById('download').scrollIntoView({behavior:'smooth'})">
-          ⬇️ Download Insta
-          <span style="font-size:11px;opacity:0.8;">Coming soon</span>
+           Use Insta
         </button>
       </div>
+    </div>
+  </section>
 
   <!-- FEATURES -->
   <section id="features">
@@ -515,16 +513,14 @@
 
     <div class="feature-grid">
       <article class="feature-card">
-        <div class="feature-icon">📺</div>
         <div class="feature-title">YouTube-style layout</div>
         <p class="feature-desc">
           Home feed, Shorts tab, subscriptions and channel pages – organised like a modern video platform,
-          but simplified for local demos.
+          but simplified for daily using.
         </p>
       </article>
 
       <article class="feature-card">
-        <div class="feature-icon">👥</div>
         <div class="feature-title">Multiple accounts</div>
         <p class="feature-desc">
           Create and switch between different accounts on the same device. Each account has its own channel,
@@ -533,16 +529,14 @@
       </article>
 
       <article class="feature-card">
-        <div class="feature-icon">📱</div>
         <div class="feature-title">Shorts support</div>
         <p class="feature-desc">
-          Mark a video as “Shorts” and Insta keeps it in a dedicated Shorts feed. The demo enforces
+          Mark a video as “Shorts” and Insta keeps it in a dedicated Shorts feed. The app enforces
           a maximum length of 60 seconds.
         </p>
       </article>
 
       <article class="feature-card">
-        <div class="feature-icon">🎵</div>
         <div class="feature-title">InstaMusic audio tab</div>
         <p class="feature-desc">
           Upload and play audio files for background music, study beats or podcasts – separated from
@@ -551,8 +545,7 @@
       </article>
 
       <article class="feature-card">
-        <div class="feature-icon">💬</div>
-        <div class="feature-title">Likes & comments (demo)</div>
+        <div class="feature-title">Likes & comments</div>
         <p class="feature-desc">
           Each video has its own detail page with like button, view counter and a simple comment section,
           all simulated in localStorage.
@@ -560,7 +553,6 @@
       </article>
 
       <article class="feature-card">
-        <div class="feature-icon">🔒</div>
         <div class="feature-title">Local only, no backend</div>
         <p class="feature-desc">
           All data – accounts, channels, videos and music – is stored in the browser. Perfect for teaching,
@@ -573,7 +565,7 @@
   <!-- HOW IT WORKS -->
   <section id="how-it-works">
     <div class="section-header">
-      <h2>How the Insta demo works</h2>
+      <h2>How Insta works</h2>
     </div>
 
     <div class="steps">
@@ -581,8 +573,8 @@
         <div class="step-label">Step 1</div>
         <div class="step-title">Create an account & channel</div>
         <p class="step-desc">
-          Choose a username, set a channel name and (optionally) a profile picture. All of this is written
-          to localStorage under your browser.
+          Choose a username, set a channel name and a profile picture. All of this is written
+          to the data folder you choosed.
         </p>
       </div>
 
@@ -606,48 +598,35 @@
     </div>
   </section>
 
-  <!-- DOWNLOAD / COMING SOON -->
+  <!-- DOWNLOAD -->
   <section id="download">
     <div class="section-header">
-      <h2>Download Insta</h2>
+      <h2>Use Insta</h2>
     </div>
 
     <div class="download-card">
       <div>
-        <div class="download-title">Insta downloads are not ready yet.</div>
+        <div class="download-title">Your Journey With Insta Starts Here.</div>
         <p class="download-text">
-          The project is still in active development. When the first public demo build is ready,
-          you’ll be able to download it directly from here.
+          Use Insta and build your memories.
         </p>
 
-        <div class="download-row">
-          <button class="download-btn">
-            <span class="platform">Desktop build</span>
-            <span class="coming-pill">Coming soon</span>
-          </button>
-          <button class="download-btn">
+          <!-- Browser version: GitHub Pages -->
+          <a
+            class="download-btn"
+            href="https://zortingencomeback13.github.io/Insta/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span class="platform">Browser version</span>
-            <span class="coming-pill">Coming soon</span>
-          </button>
+            <span class="coming-pill">Open</span>
+          </a>
         </div>
 
         <p class="download-note">
           No sign-up, no login, no tracking. Just open Insta and start experimenting on your own machine.
         </p>
       </div>
-
-      <div class="download-side">
-        <strong>Planned experience</strong>
-        <ul style="margin-top:6px;padding-left:14px;">
-          <li>Single file or simple web build</li>
-          <li>Runs locally with no server required</li>
-          <li>All data stored in localStorage</li>
-          <li>Perfect for classes, workshops and tech demos</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</main>
 
 <footer>
   <span>Insta Project</span> · a offline social media.
